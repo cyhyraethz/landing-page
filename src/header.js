@@ -6,21 +6,28 @@ export default function loadHeader() {
 function loadNav() {
   const container = document.getElementById('header');
   const headerNav = document.createElement('div');
+  const headerHome = document.createElement('a');
   const headerLogo = document.createElement('h2');
-  const headerLinkList = document.createElement('ul');
+  const headerList = document.createElement('ul');
   const headerLinkOne = document.createElement('a');
   const headerLinkTwo = document.createElement('a');
   const headerLinkThree = document.createElement('a');
 
   headerNav.className = 'headerNav';
 
+  headerHome.href = '#home';
+  headerHome.className = 'headerHome';
+
   headerLogo.className = 'headerLogo';
   headerLogo.textContent = 'Header Logo';
 
-  headerLinkList.className = 'headerLinkList';
+  headerList.className = 'headerList';
 
+  headerLinkOne.href = '#one';
   headerLinkOne.textContent = 'header link one';
+  headerLinkTwo.href = '#two';
   headerLinkTwo.textContent = 'header link two';
+  headerLinkThree.href = '#three';
   headerLinkThree.textContent = 'header link three';
 
   const headerLinks = [headerLinkOne, headerLinkTwo, headerLinkThree];
@@ -28,12 +35,14 @@ function loadNav() {
   for (let link of headerLinks) {
     const listItem = document.createElement('li');
     listItem.appendChild(link);
-    // link.className = 'headerLink';
-    headerLinkList.appendChild(listItem);
+    link.className = 'headerLink';
+    headerList.appendChild(listItem);
   }
 
-  headerNav.appendChild(headerLogo);
-  headerNav.appendChild(headerLinkList);
+  headerHome.appendChild(headerLogo);
+
+  headerNav.appendChild(headerHome);
+  headerNav.appendChild(headerList);
 
   container.appendChild(headerNav);
 }
@@ -45,6 +54,7 @@ function loadContent() {
   const headerMessageTitle = document.createElement('h1');
   const headerMessageText = document.createElement('p');
   const headerContentRight = document.createElement('div');
+  const headerButtonLink = document.createElement('a');
   const headerButton = document.createElement('button');
   const headerImage = document.createElement('img');
   headerContent.className = 'headerContent';
@@ -57,14 +67,18 @@ function loadContent() {
   headerMessageTitle.className = 'headerMessageTitle';
   headerMessageTitle.textContent = 'This website is awesome';
 
+  headerButtonLink.href = '#sign-up';
+
   headerButton.className = 'headerButton';
   headerButton.textContent = 'Sign up';
 
   headerImage.className = 'headerImage';
 
+  headerButtonLink.appendChild(headerButton);
+
   headerContentLeft.appendChild(headerMessageTitle);
   headerContentLeft.appendChild(headerMessageText);
-  headerContentLeft.appendChild(headerButton);
+  headerContentLeft.appendChild(headerButtonLink);
 
   headerContentRight.appendChild(headerImage);
 
