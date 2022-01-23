@@ -1,0 +1,86 @@
+::-webkit-scrollbar {
+  background-color: #202324;
+  color: #aba499;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #181a1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #454a4d;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#header,
+#footer {
+  background-color: #1f2937;
+}
+
+#header {
+  padding: 0 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLogo {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.headerMessageTitle {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.headerLinkList,
+.headerMessageText {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.headerLinkList {
+  gap: 1em;
+  display: flex;
+  list-style-type: none;
+}
+
+.headerButton {
+  background-color: #3882f6;
+}
+
+.headerContent {
+  display: flex;
+  padding: 10% 0;
+}
+
+.headerImage {
+  width: 500px;
+  height: 300px;
+}
+
+#quote {
+  background-color: #e5e7eb;
+}
