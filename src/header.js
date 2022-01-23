@@ -1,4 +1,9 @@
 export default function loadHeader() {
+  loadNav();
+  loadContent();
+}
+
+function loadNav() {
   const container = document.getElementById('header');
   const headerNav = document.createElement('div');
   const headerLogo = document.createElement('h2');
@@ -6,13 +11,6 @@ export default function loadHeader() {
   const headerLinkOne = document.createElement('a');
   const headerLinkTwo = document.createElement('a');
   const headerLinkThree = document.createElement('a');
-  const headerContent = document.createElement('div');
-  const headerContentLeft = document.createElement('div');
-  const headerMessageTitle = document.createElement('h1');
-  const headerMessageText = document.createElement('p');
-  const headerContentRight = document.createElement('div');
-  const headerButton = document.createElement('button');
-  const headerImage = document.createElement('img');
 
   headerNav.className = 'headerNav';
 
@@ -25,6 +23,30 @@ export default function loadHeader() {
   headerLinkTwo.textContent = 'header link two';
   headerLinkThree.textContent = 'header link three';
 
+  const headerLinks = [headerLinkOne, headerLinkTwo, headerLinkThree];
+
+  for (let link of headerLinks) {
+    const listItem = document.createElement('li');
+    listItem.appendChild(link);
+    // link.className = 'headerLink';
+    headerLinkList.appendChild(listItem);
+  }
+
+  headerNav.appendChild(headerLogo);
+  headerNav.appendChild(headerLinkList);
+
+  container.appendChild(headerNav);
+}
+
+function loadContent() {
+  const container = document.getElementById('header');
+  const headerContent = document.createElement('div');
+  const headerContentLeft = document.createElement('div');
+  const headerMessageTitle = document.createElement('h1');
+  const headerMessageText = document.createElement('p');
+  const headerContentRight = document.createElement('div');
+  const headerButton = document.createElement('button');
+  const headerImage = document.createElement('img');
   headerContent.className = 'headerContent';
 
   headerMessageText.className = 'headerMessageText';
@@ -40,18 +62,6 @@ export default function loadHeader() {
 
   headerImage.className = 'headerImage';
 
-  const headerLinks = [headerLinkOne, headerLinkTwo, headerLinkThree];
-
-  for (let link of headerLinks) {
-    const listItem = document.createElement('li');
-    listItem.appendChild(link);
-    // link.className = 'headerLink';
-    headerLinkList.appendChild(listItem);
-  }
-
-  headerNav.appendChild(headerLogo);
-  headerNav.appendChild(headerLinkList);
-
   headerContentLeft.appendChild(headerMessageTitle);
   headerContentLeft.appendChild(headerMessageText);
   headerContentLeft.appendChild(headerButton);
@@ -61,6 +71,5 @@ export default function loadHeader() {
   headerContent.appendChild(headerContentLeft);
   headerContent.appendChild(headerContentRight);
 
-  container.appendChild(headerNav);
   container.appendChild(headerContent);
 }
