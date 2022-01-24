@@ -11,10 +11,6 @@
   background-color: #454a4d;
 }
 
-:root {
-  color-scheme: dark;
-}
-
 html {
   overflow-y: scroll;
 }
@@ -24,6 +20,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  font-family: Roboto, sans-serif;
 }
 
 #header,
@@ -32,7 +29,7 @@ body {
 }
 
 #header {
-  padding: 0 15%;
+  padding: 0 14.5%;
   display: flex;
   flex-direction: column;
 }
@@ -81,6 +78,7 @@ body {
 }
 
 .headerButton {
+  color: #f9faf8;
   font-size: 18px;
   margin-top: 10px;
   font-weight: bold;
@@ -94,14 +92,21 @@ body {
 }
 
 .headerContent {
+  padding-bottom: 13%;
+  padding-top: 10%;
   display: flex;
-  padding: 10% 0;
   gap: 7%;
 }
 
 .headerImage {
   width: 550px;
   height: 250px;
+  color: #f9faf8;
+  font-size: 18px;
+  background-color: #6d747d;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 #quote {

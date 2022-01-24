@@ -56,7 +56,7 @@ function loadContent() {
   const headerContentRight = document.createElement('div');
   const headerButtonLink = document.createElement('a');
   const headerButton = document.createElement('button');
-  const headerImage = document.createElement('img');
+  const headerImage = document.createElement('div');
   headerContent.className = 'headerContent';
 
   headerMessageText.className = 'headerMessageText';
@@ -73,6 +73,7 @@ function loadContent() {
   headerButton.textContent = 'Sign up';
 
   headerImage.className = 'headerImage';
+  headerImage.textContent = 'this is a placeholder for an image';
 
   headerButtonLink.appendChild(headerButton);
 
