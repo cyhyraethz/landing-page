@@ -23,6 +23,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+body > div {
+  display: flex;
+}
+
 #header,
 #footer {
   background-color: #1f2937;
@@ -30,7 +34,6 @@ body {
 
 #header {
   padding: 0 14.5%;
-  display: flex;
   flex-direction: column;
 }
 
@@ -107,6 +110,43 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+#info {
+  padding: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.infoTitle {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.infoBoxes {
+  margin-top: 20px;
+  display: flex;
+  gap: 50px;
+}
+
+.infoBox {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoBoxImage {
+  border: 4px solid #3882f6;
+  border-radius: 10%;
+  height: 170px;
+}
+
+.infoBoxText {
+  color: #4d545d;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 #quote {
