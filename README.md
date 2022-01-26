@@ -8,7 +8,7 @@
 
 ### Live Demo
 
-- [GitLab Pages](https://cyhyraeth.gitlab.io/restaurant-page/)
+- [GitLab Pages](https://cyhyraeth.gitlab.io/landing-page/)
 
 ### Built With
 
