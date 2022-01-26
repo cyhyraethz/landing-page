@@ -246,9 +246,15 @@ body > div {
 }
 
 #quote {
-  padding: 128px 24%;
-  flex-direction: column;
+  padding: 128px;
+  justify-content: center;
   background-color: #e5e7eb;
+}
+
+.quote {
+  width: 49em;
+  display: flex;
+  flex-direction: column;
 }
 
 .quoteText {
@@ -260,7 +266,7 @@ body > div {
 }
 
 .quoteAuthor {
-  margin: 0 2em 0 0;
+  margin: 0 1.5em 0 0;
   font-size: 24px;
   font-weight: bold;
   align-self: flex-end;

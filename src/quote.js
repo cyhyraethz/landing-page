@@ -1,7 +1,10 @@
 export default function loadQuote() {
   const container = document.getElementById('quote');
+  const quote = document.createElement('div');
   const quoteText = document.createElement('p');
   const quoteAuthor = document.createElement('p');
+
+  quote.className = 'quote';
 
   quoteText.className = 'quoteText';
   quoteText.textContent =
@@ -12,6 +15,8 @@ export default function loadQuote() {
   quoteAuthor.className = 'quoteAuthor';
   quoteAuthor.textContent = '-Thor, God of Thunder';
 
-  container.appendChild(quoteText);
-  container.appendChild(quoteAuthor);
+  quote.appendChild(quoteText);
+  quote.appendChild(quoteAuthor);
+
+  container.appendChild(quote);
 }
