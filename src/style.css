@@ -18,6 +18,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: Roboto, sans-serif;
@@ -207,7 +208,8 @@ body > div {
 }
 
 #info {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 120px;
   align-items: center;
   flex-direction: column;
 }
@@ -298,4 +300,13 @@ body > div {
   color: inherit;
   background-color: inherit;
   border: 3px solid currentcolor;
+}
+
+#footer {
+  gap: 10px;
+  padding: 24px;
+  display: flex;
+  color: #e5e7eb;
+  font-size: 18px;
+  justify-content: center;
 }
