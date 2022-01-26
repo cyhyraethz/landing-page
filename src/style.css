@@ -170,13 +170,17 @@ body > div {
   text-decoration: none;
 }
 
-.headerButton {
-  color: #f9faf8;
+.headerButton,
+.bannerButton {
   font-size: 18px;
-  margin-top: 10px;
   font-weight: bold;
   padding: 0.5em 2em;
   border-radius: 10px;
+}
+
+.headerButton {
+  color: #f9faf8;
+  margin-top: 10px;
   background-color: #3882f6;
 }
 
@@ -258,4 +262,40 @@ body > div {
   font-size: 24px;
   font-weight: bold;
   align-self: flex-end;
+}
+
+#sign {
+  padding: 113px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  color: #f9faf8;
+  padding: 50px 120px;
+  border-radius: 10px;
+  background-color: #3882f6;
+  gap: 250px;
+}
+
+.bannerLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.bannerTitle,
+.bannerText {
+  padding: 0;
+  margin: 0;
+}
+
+.bannerText {
+  color: #e5e7eb;
+}
+
+.bannerButton {
+  color: inherit;
+  background-color: inherit;
+  border: 3px solid currentcolor;
 }
