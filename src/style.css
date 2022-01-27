@@ -25,6 +25,7 @@ body {
 }
 
 body > div {
+  flex-grow: 1;
   display: flex;
 }
 
@@ -120,6 +121,7 @@ body > div {
 
 #header,
 #footer {
+  flex-grow: 0;
   background-color: #1f2937;
 }
 
