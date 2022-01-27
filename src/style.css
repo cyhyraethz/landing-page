@@ -217,8 +217,9 @@ body > div {
 #info {
   padding-top: 30px;
   padding-bottom: 120px;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .infoTitle {
@@ -254,6 +255,7 @@ body > div {
 
 #quote {
   padding: 128px;
+  align-items: center;
   justify-content: center;
   background-color: #e5e7eb;
 }
